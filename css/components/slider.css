@@ -1,0 +1,108 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slide img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.prev, .next {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../../images/slider-arrow.svg);
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.slider button{
+    background-color: unset;
+}
+.slider-button-wrap{
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+.prev { background-image: url(../../images/slider-arrow2.svg); }
+.indicators {
+    position: relative;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.indicator {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #323232;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.indicator.active {
+    background: white;
+}
+.slider-text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 143%;
+color: #fff;
+}
+
+.slider-text-div {
+    display: flex;
+    padding: 0rem 8rem 3rem 8rem;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.gradient{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-26rem);
+    width: 42.1rem !important;
+}
+.slick-dots {
+    display: flex !important;
+    bottom: -5.5rem !important;
+    width: 16.2rem !important;
+    left: 4rem;
+}
+.slick-dots li button:before {
+    color: #595959!important;
+    font-size: 0.8rem !important;
+    opacity: 1 !important;
+    
+}
+.slick-dots li.slick-active button:before{
+    -webkit-text-stroke: 2px #6abcb7;
+    opacity: 1 !important;
+}
+.subslider{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 5.3rem;
+    margin-bottom: 4.8rem;
+}
+.slick-dots li{
+    margin: 0 !important;
+}
