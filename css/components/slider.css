@@ -24,6 +24,7 @@
     transform: translateY(-50%);
     background-image: url(../../images/slider-arrow.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 11rem;
     height: 1rem;
     border: none;
