@@ -16,7 +16,6 @@
     width: 98%;
     height: 98%;
     object-fit: cover;
-    border-radius: 10px;
 }
 .prev, .next {
     position: relative;
